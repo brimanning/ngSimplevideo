@@ -6,8 +6,15 @@
 	<body ng-app="ngSimpleVideo" ng-controller="SampleController">
 		<simplevideo
 			src="videoSrc"
+			control-object="controlObject"
 			>
 		</simplevideo>
+
+		<button ng-click="controlObject.play()">Play</button>
+		<button ng-click="controlObject.pause()">Pause</button>
+		<button ng-click="controlObject.setCurrentTime(5)">Go Five Seconds In</button>
+		<button ng-click="controlObject.setVolume(0)">Mute</button>
+		<button ng-click="controlObject.setVolume(1)">Unmute</button>
 
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/angularjs/angular.js"></script>
@@ -21,7 +28,8 @@
 			angular.module('ngSimpleVideo').controller('SampleController',
 				['$scope',
 				function($scope) {
-					$scope.videoSrc = 'bower_components/simplevideo/color-run.mp4'
+					$scope.videoSrc = 'bower_components/simplevideo/color-run.mp4';
+					$scope.controlObject = {};
 				}
 			]);
 		</script>

@@ -19,17 +19,27 @@
         onPlayingInterval: '=?',
         swfobjectUrl: '=?',
         playerProductInstallSwfUrl: '=?',
-        simplevideoId: '=?'
+        simplevideoId: '=?',
+        controlObject: '=?'
       },
       link: function(scope, element, attrs) {
         if (typeof scope.simplevideoId === 'undefined' || !scope.simplevideoId) {
           scope.simplevideoId = 'simplevideo'
         }
 
-        var opts = scope
-        opts.target = element
+        var opts = scope;
+        opts.target = element;
 
-        simplevideo.init(opts);
+        var video = simplevideo.init(opts);
+
+        scope.externalControls = scope.controlObject || {};
+        scope.externalControls.play = video.play;
+        scope.externalControls.pause = video.pause;
+        scope.externalControls.getCurrentTime = video.getCurrentTime;
+        scope.externalControls.setCurrentTime = video.setCurrentTime;
+        scope.externalControls.getDuration = video.getDuration;
+        scope.externalControls.getVolume = video.getVolume;
+        scope.externalControls.setVolume = video.setVolume;
       }
     };
   });
