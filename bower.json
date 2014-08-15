@@ -1,0 +1,29 @@
+{
+  "name": "ngSimplevideo",
+  "version": "0.1.0",
+  "homepage": "https://github.com/brimanning/ngSimplevideo",
+  "authors": [
+    "Brian Manning <bri@brimanning.com>"
+  ],
+  "description": "An angularjs implementation of simplevideo",
+  "keywords": [
+    "simplevideo",
+    "html5",
+    "video",
+    "flash",
+    "angular",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "simplevideo": "~0.1.0",
+    "angularjs": "~1.2.22"
+  }
+}
