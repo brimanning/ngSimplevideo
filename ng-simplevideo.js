@@ -40,6 +40,9 @@
         scope.externalControls.getDuration = video.getDuration;
         scope.externalControls.getVolume = video.getVolume;
         scope.externalControls.setVolume = video.setVolume;
+        scope.externalControls.isPaused = function() {
+          return video.paused;
+        };
       }
     };
   });
