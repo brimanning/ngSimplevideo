@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angular simplevideo</title>
+	</head>
+	<body ng-app="ngSimpleVideo" ng-controller="SampleController">
+		<simplevideo
+			src="videoSrc"
+			>
+		</simplevideo>
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/angularjs/angular.js"></script>
+		<script src="bower_components/simplevideo/simplevideo.js"></script>
+		<script src="bower_components/swfobject/swfobject/swfobject.js"></script>
+		<script src="bower_components/swfobject/swfobject/swfobject.js"></script>
+		<script src="ng-simplevideo.js"></script>
+		<script>
+			function testing (message) { console.log(message); }
+
+			angular.module('ngSimpleVideo').controller('SampleController',
+				['$scope',
+				function($scope) {
+					$scope.videoSrc = 'bower_components/simplevideo/color-run.mp4'
+				}
+			]);
+		</script>
+	</body>
+</html>
