@@ -1,7 +1,7 @@
 (function(window, angular, undefined) {
   'use strict';
 
-  angular.module('ngSimpleVideo', []).directive('simplevideo', function() {
+  angular.module('ngSimplevideo', []).directive('simplevideo', function() {
     return {
       restrict: 'AE',
       template: '<div class="simplevideo"></div>',
