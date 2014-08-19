@@ -6,8 +6,8 @@ ngSimplevideo is an angularjs implementation of simplevideo.
 Quick Start
 ===
 + Download from above
-+ Clone: `git clone https://github.com/brimanning/simplevideo.git`
-+ Coming: `bower install simplevideo`
++ Clone: `git clone https://github.com/brimanning/ngsimplevideo.git`
++ Coming: `bower install ngsimplevideo`
 
 Dependencies
 ===
