@@ -3,10 +3,12 @@
 	<head>
 		<title>Angular simplevideo</title>
 	</head>
-	<body ng-app="ngSimpleVideo" ng-controller="SampleController">
+	<body ng-app="ngSimplevideo" ng-controller="SampleController">
 		<simplevideo
 			src="videoSrc"
 			control-object="controlObject"
+			autoplay="true"
+			swf-url="swfUrl"
 			>
 		</simplevideo>
 
@@ -26,10 +28,11 @@
 		<script>
 			function testing (message) { console.log(message); }
 
-			angular.module('ngSimpleVideo').controller('SampleController',
+			angular.module('ngSimplevideo').controller('SampleController',
 				['$scope',
 				function($scope) {
 					$scope.videoSrc = 'bower_components/simplevideo/color-run.mp4';
+					$scope.swfUrl = 'bower_components/simplevideo/simplevideo.swf';
 					$scope.controlObject = {};
 				}
 			]);
