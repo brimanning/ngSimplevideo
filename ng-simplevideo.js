@@ -18,6 +18,7 @@
         onPlaying: '&',
         onPlayingInterval: '=?',
         swfobjectUrl: '=?',
+        swfUrl: '=?',
         playerProductInstallSwfUrl: '=?',
         simplevideoId: '=?',
         controlObject: '=?'
