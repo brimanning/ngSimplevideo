@@ -1,7 +1,7 @@
 {
   "name": "ngSimplevideo",
   "main": "ng-simplevideo.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/brimanning/ngsimplevideo",
   "authors": [
     "Brian Manning <bri@brimanning.com>"
@@ -24,7 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "simplevideo": "~0.1.0",
+    "simplevideo": "~0.1.1",
     "angularjs": "~1.2.22",
     "swfobject": "*",
     "jquery": "~2.1.1"
