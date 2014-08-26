@@ -1,7 +1,7 @@
 {
   "name": "ngSimplevideo",
   "main": "ng-simplevideo.js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/brimanning/ngsimplevideo",
   "authors": [
     "Brian Manning <bri@brimanning.com>"
