@@ -1,3 +1,22 @@
+/*
+ * simplevideo Angular Directive JavaScript Library v0.1.4
+ * https://github.com/brimanning/ngSimplevideo
+ *
+ * Uses jQuery.js
+ * http://jquery.com/
+ *
+ * Uses swfobject.js
+ * https://code.google.com/p/swfobject
+ *
+ * Uses simplevideo.js
+ * https://github.com/brimanning/simplevideo
+ *
+ * Copyright 2014 Brian Manning
+ * Released under the MIT license
+ *
+ * Date: 9/16/2014
+ */
+
 (function(window, angular, undefined) {
   'use strict';
 
